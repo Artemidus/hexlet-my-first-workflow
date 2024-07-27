@@ -11,4 +11,5 @@ jobs:
     steps: # список шагов, которые надо выполнить
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
-      - run: say-hello
+      - uses: actions/checkout@v3
+      - run: make say-hello
