@@ -9,9 +9,4 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
-<<<<<<< HEAD
-      - run: make say-hello
-=======
-      - name: my-step
-        run: make say-hello
->>>>>>> refs/remotes/origin/main
+      -  run: make say-hello
