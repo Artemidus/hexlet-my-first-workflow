@@ -12,6 +12,11 @@ jobs:
     # экшен — выполняет какую-то задачу
     # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'npm' # ускоряет повторные сборки
       # run – произвольная bash-команда
       - run: make say-hello
       - name: Run Snyk to check for vulnerabilities
